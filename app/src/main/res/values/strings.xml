@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Tic Tac Toe</string>
+    <string name="image0" />
+    <string name="image1" />
+    <string name="image2" />
+    <string name="image3" />
+    <string name="image4" />
+    <string name="image5" />
+    <string name="image6" />
+    <string name="image7" />
+    <string name="image8" />
+    <string name="reset_btn">Reset</string>
+</resources>
