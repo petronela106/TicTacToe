@@ -10,4 +10,8 @@
     <string name="image7" />
     <string name="image8" />
     <string name="reset_btn">Reset</string>
+    <string name="title_textView">Tic Tac Toe</string>
+    <string name="resume_btn">Resume Game</string>
+    <string name="new_btn">New Game</string>
+    <string name="back_btn" />
 </resources>

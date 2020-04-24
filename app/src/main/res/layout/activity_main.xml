@@ -4,139 +4,53 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#599CE8"
-    tools:context=".MainActivity">
+    android:background="#599CE8">
 
-    <GridLayout
-        android:id="@+id/GridLayout"
-        android:layout_width="wrap_content"
+    <Button
+        android:id="@+id/new_btn"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:background="@color/colorAccent"
-        android:columnCount="3"
-        android:rowCount="3"
-        android:useDefaultMargins="true"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="412dp"
+        android:layout_marginRight="100dp"
+        android:background="#4C77A8"
+        android:text="@string/new_btn"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.541">
-
-
-        <ImageView
-            android:id="@+id/image0"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_row="0"
-            android:layout_column="0"
-            android:background="#3C51CD"
-            android:text="@string/image0"
-            android:tag="0"/>
-
-        <ImageView
-            android:id="@+id/image1"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_row="0"
-            android:layout_column="1"
-            android:background="#3C51CD"
-            android:text="@string/image1"
-            android:tag="1"/>
-
-        <ImageView
-            android:id="@+id/image2"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_row="0"
-            android:layout_column="2"
-            android:background="#3C51CD"
-            android:text="@string/image2"
-            android:tag="2"/>
-
-        <ImageView
-            android:id="@+id/image3"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_row="1"
-            android:layout_column="0"
-            android:background="#3C51CD"
-            android:text="@string/image3"
-            android:tag="3"/>
-
-        <ImageView
-            android:id="@+id/image4"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_row="1"
-            android:layout_column="1"
-            android:background="#3C51CD"
-            android:text="@string/image4"
-            android:tag="4"/>
-
-        <ImageView
-            android:id="@+id/image5"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_row="1"
-            android:layout_column="2"
-            android:background="#3C51CD"
-            android:text="@string/image5"
-            android:tag="5"/>
-
-        <ImageView
-            android:id="@+id/image6"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_row="2"
-            android:layout_column="0"
-            android:background="#3C51CD"
-            android:text="@string/image6"
-            android:tag="6"/>
-
-        <ImageView
-            android:id="@+id/image7"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_row="2"
-            android:layout_column="1"
-            android:background="#3C51CD"
-            android:text="@string/image7"
-            android:tag="7"/>
-
-        <ImageView
-            android:id="@+id/image8"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_row="2"
-            android:layout_column="2"
-            android:background="#3C51CD"
-            android:text="@string/image8"
-            android:tag="8"/>
-    </GridLayout>
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Tic Tac Toe"
-        android:textAllCaps="true"
-        android:textSize="25sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/GridLayout"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.56"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/reset_btn"
-        android:layout_width="wrap_content"
+        android:id="@+id/resume_btn"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="@string/reset_btn"
-        android:visibility="gone"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginRight="100dp"
+        android:background="#4C77A8"
+        android:text="@string/resume_btn"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/GridLayout"
-        app:layout_constraintVertical_bias="0.41" />
+        app:layout_constraintTop_toBottomOf="@+id/new_btn"
+        app:layout_constraintVertical_bias="0.052" />
 
+    <TextView
+        android:id="@+id/title_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_textView"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="36sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/new_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.457" />
 </androidx.constraintlayout.widget.ConstraintLayout>

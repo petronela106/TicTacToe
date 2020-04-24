@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/constraintlayout"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="#599CE8"
+tools:context=".SecondActivity">
+
+<GridLayout
+    android:id="@+id/GridLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/colorAccent"
+    android:columnCount="3"
+    android:rowCount="3"
+    android:useDefaultMargins="true"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.411">
+
+
+    <ImageView
+        android:id="@+id/image0"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:background="#3C51CD"
+        android:tag="0"
+        android:text="@string/image0" />
+
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_row="0"
+        android:layout_column="1"
+        android:background="#3C51CD"
+        android:tag="1"
+        android:text="@string/image1" />
+
+    <ImageView
+        android:id="@+id/image2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_row="0"
+        android:layout_column="2"
+        android:background="#3C51CD"
+        android:tag="2"
+        android:text="@string/image2" />
+
+    <ImageView
+        android:id="@+id/image3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_row="1"
+        android:layout_column="0"
+        android:background="#3C51CD"
+        android:tag="3"
+        android:text="@string/image3" />
+
+    <ImageView
+        android:id="@+id/image4"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_row="1"
+        android:layout_column="1"
+        android:background="#3C51CD"
+        android:tag="4"
+        android:text="@string/image4" />
+
+    <ImageView
+        android:id="@+id/image5"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_row="1"
+        android:layout_column="2"
+        android:background="#3C51CD"
+        android:tag="5"
+        android:text="@string/image5" />
+
+    <ImageView
+        android:id="@+id/image6"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_row="2"
+        android:layout_column="0"
+        android:background="#3C51CD"
+        android:tag="6"
+        android:text="@string/image6" />
+
+    <ImageView
+        android:id="@+id/image7"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_row="2"
+        android:layout_column="1"
+        android:background="#3C51CD"
+        android:tag="7"
+        android:text="@string/image7" />
+
+    <ImageView
+        android:id="@+id/image8"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_row="2"
+        android:layout_column="2"
+        android:background="#3C51CD"
+        android:tag="8"
+        android:text="@string/image8"
+        android:contentDescription="TODO" />
+
+</GridLayout>
+
+<TextView
+    android:id="@+id/title_textView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/title_textView"
+    android:textAllCaps="true"
+    android:textColor="@color/colorPrimaryDark"
+    android:textSize="36sp"
+    android:textStyle="bold"
+    app:layout_constraintBottom_toTopOf="@+id/GridLayout"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.313" />
+
+<Button
+    android:id="@+id/reset_btn"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/reset_btn"
+    android:visibility="gone"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.498"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/GridLayout"
+    app:layout_constraintVertical_bias="0.41" />
+
+    <TextView
+        android:id="@+id/p1_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="250dp"
+        android:layout_marginRight="250dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reset_btn" />
+
+    <TextView
+        android:id="@+id/p2_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="250dp"
+        android:layout_marginLeft="250dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reset_btn" />
+
+    <Button
+        android:id="@+id/back_btn"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginRight="11dp"
+        android:layout_marginBottom="112dp"
+        android:background="?attr/actionModeCloseDrawable"
+        android:text="@string/back_btn"
+        app:layout_constraintBottom_toTopOf="@+id/GridLayout"
+        app:layout_constraintEnd_toStartOf="@+id/title_textView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
